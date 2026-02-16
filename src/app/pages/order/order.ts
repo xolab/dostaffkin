@@ -38,10 +38,6 @@ export class Order {
       phone: ['', [Validators.required]],
       comment: ['']
     });
-    this.routeForm.valueChanges.subscribe(data => {
-      console.log('Form changes', data)
-      this.calculate()
-    })
   }
 
   ngOnInit() {
